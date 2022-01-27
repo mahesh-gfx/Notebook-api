@@ -1,11 +1,11 @@
 {
   "name": "notebook-api",
   "version": "1.0.0",
-  "description": "api to create, remove, update and delete notes",
+  "description": "api to create, read, update and delete notes",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon ./src/index.js"
+    "start": "nodemon index.ts"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,14 @@
   "dependencies": {
     "express": "^4.17.2",
     "jest": "^27.4.7",
+    "mongodb": "^4.2.2",
     "mongoose": "^6.1.7",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
   }
 }

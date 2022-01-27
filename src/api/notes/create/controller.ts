@@ -2,8 +2,9 @@ import { Note } from "./model";
 
 const createNote = (req: any, res: any) => {
   const note = new Note({
-    title: req.body.notes,
-    note: req.body.sign,
+    title: req.body.title,
+    note: req.body.note,
+    userId: req.body.userId,
   });
 
   try {
