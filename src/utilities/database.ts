@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 export function dbConnect() {
-  mongoose.connect("mongodb://localhost:27017/notes");
+  var mongoDB = "mongodb://127.0.0.1/notes";
+  mongoose.connect(mongoDB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
   console.log("DB Connected");
 }
 

@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/mahesh-gfx/Notebook-api#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
     "jest": "^27.4.7",
     "mongodb": "^4.2.2",

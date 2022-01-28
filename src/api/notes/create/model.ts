@@ -2,13 +2,13 @@ import * as Mongoose from "mongoose";
 
 const notesSchema = new Mongoose.Schema(
   {
-    title: { type: String, required: true },
-    note: { type: String, required: true },
-    userId: { type: String, required: true },
+    title: { type: String },
+    note: { type: String },
+    userId: { type: String },
   },
   { timestamps: true }
 );
 
-const Note = Mongoose.model("Notes", notesSchema);
+const Note = Mongoose.model("Note", notesSchema);
 
 export { Note };
